@@ -3,6 +3,7 @@
 
 env.codeType="nodejs"
 env.component="catalogue"
+env.schemadir="schema"
 
 
 // call the function from jenkin-roboshop/shared-library/vars/cipipeline.groovy
