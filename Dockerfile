@@ -3,6 +3,7 @@ RUN         mkdir /app
 WORKDIR     /app
 COPY        node_modules /app/node_modules/
 COPY        package.json /app/package.json
+ADD         https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem /app/rds-combined-ca-bundle.pem
 COPY        server.js /app/server.js
 COPY        run.sh /app/run.sh
 ENTRYPOINT  ["bash", "/app/run.sh"]
